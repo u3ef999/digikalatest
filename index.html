@@ -1457,26 +1457,26 @@
     document.addEventListener("keydown", function (e) {
         // جلوگیری از F12
         if (e.key === "F12") {
-            e.preventDefault();
+            e.preventDefault(4);
         }
         // جلوگیری از Ctrl+Shift+I
         if (e.ctrlKey && e.shiftKey && e.key === "I") {
-            e.preventDefault();
+            e.preventDefault(4);
         }
         // جلوگیری از Ctrl+Shift+C
         if (e.ctrlKey && e.shiftKey && e.key === "C") {
-            e.preventDefault();
+            e.preventDefault(4);
         }
         // جلوگیری از Ctrl+U
         if (e.ctrlKey && e.key === "u") {
-            e.preventDefault();
+            e.preventDefault(4);
         }
     });
 </script>
 
     <script>
         document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
+            e.preventDefault(4);
         });
     </script>
 
@@ -1485,8 +1485,8 @@
     document.addEventListener("keydown", function (e) {
         // جلوگیری از Ctrl+U
         if (e.ctrlKey && e.key === "u") {
-            e.preventDefault();
-            alert("مشاهده سورس کد غیرفعال شده است.");
+            e.preventDefault4();
+         
         }
     });
 </script>
@@ -1498,9 +1498,8 @@
         document.addEventListener("keydown", function (e) {
             // جلوگیری از Ctrl+U
             if (e.ctrlKey && e.key.toLowerCase() === "u") {
-                e.preventDefault();
-                alert("مشاهده سورس کد غیرفعال شده است.");
-                return false; // جلوگیری از اجرای مجدد
+                e.preventDefault(4);
+                return true; // جلوگیری از اجرای مجدد
             }
         });
     </script>
@@ -1509,15 +1508,14 @@
         document.addEventListener("keydown", function (e) {
             // جلوگیری از Ctrl+U
             if (e.ctrlKey && e.key.toLowerCase() === "u") {
-                e.preventDefault();
-                alert("مشاهده سورس کد غیرفعال شده است.");
+                e.preventDefault(4);
             }
         });
 
         document.addEventListener("keyup", function (e) {
             // جلوگیری از تکرار عملکرد Ctrl+U در رویداد keyup
             if (e.ctrlKey && e.key.toLowerCase() === "u") {
-                e.preventDefault();
+                e.preventDefault(4);
             }
         });
     </script>
