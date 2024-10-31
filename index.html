@@ -1450,6 +1450,57 @@
             return direction;
         }
     </script>
+
+
+
+<script>
+    document.addEventListener("keydown", function (e) {
+        // جلوگیری از F12
+        if (e.key === "F12") {
+            e.preventDefault();
+        }
+        // جلوگیری از Ctrl+Shift+I
+        if (e.ctrlKey && e.shiftKey && e.key === "I") {
+            e.preventDefault();
+        }
+        // جلوگیری از Ctrl+Shift+C
+        if (e.ctrlKey && e.shiftKey && e.key === "C") {
+            e.preventDefault();
+        }
+        // جلوگیری از Ctrl+U
+        if (e.ctrlKey && e.key === "u") {
+            e.preventDefault();
+        }
+    });
+</script>
+
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+
+<script>
+    document.addEventListener("keydown", function (e) {
+        // جلوگیری از Ctrl+U
+        if (e.ctrlKey && e.key === "u") {
+            e.preventDefault();
+            alert("مشاهده سورس کد غیرفعال شده است.");
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 
 </html>
