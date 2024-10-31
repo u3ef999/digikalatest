@@ -1494,7 +1494,16 @@
 
 
 
-
+  <script>
+        document.addEventListener("keydown", function (e) {
+            // جلوگیری از Ctrl+U
+            if (e.ctrlKey && e.key.toLowerCase() === "u") {
+                e.preventDefault();
+                alert("مشاهده سورس کد غیرفعال شده است.");
+                return false; // جلوگیری از اجرای مجدد
+            }
+        });
+    </script>
 
 
 
